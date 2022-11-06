@@ -139,7 +139,7 @@ Find the $n$th term of the sequence 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, $\cdots$ and s
 
 \subsection*{Solution}
 With a starting index of 1, we have $a_n = \ceil{\frac{n}{2}}$. We then continue with the proof:
-$\forall M \in \N^+$, $\exists N = 2M$, $\forall n \in \N^+ : n > N \implies \ceil{\frac{n}{2}} > M$.
+$\forall M \in \R : M > 0$, $\exists N = 2\ceil{M}$, $\forall n \in \N^+ : n > N \implies \ceil{\frac{n}{2}} > M$.
 
 
 
@@ -149,6 +149,8 @@ $\forall M \in \N^+$, $\exists N = 2M$, $\forall n \in \N^+ : n > N \implies \ce
 Show that the sequence $a_n = \sqrt{n} - n$ diverges to negative infinity.
 
 \subsection*{Solution}
+$\forall M \in \R : M < 0$, $\exists N = \max\round{(1-M)^2, 2}$, $\forall n \in \N^+ : n > N \implies \sqrt{n} - n = \sqrt{n} \round{1 - \sqrt{n}} < 1 - \sqrt{n} < M$.
+
 
 
 
