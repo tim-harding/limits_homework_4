@@ -36,7 +36,9 @@
 Show that the sequence $\frac{1}{2}$, $-\frac{1}{5}$, $\frac{1}{8}$, $-\frac{1}{11}$, $\frac{1}{14}$ converges to 0.
 
 \subsection*{Solution}
-With a starting index of 0, we can write $a_n = \frac{(-1)^n}{2 + 3n}$. Then we show that $\forall \epsilon \in \R : \epsilon > 0$, $\exists N = \ceil{\frac{1}{3\epsilon} - \frac{2}{3}}$, $\forall n \in \N : n > N \implies \abs{\frac{(-1)^n}{2+3n}} = \frac{1}{2+3n} < \epsilon$.
+With a starting index of 0, we can write $a_n = \frac{(-1)^n}{2 + 3n}$. Then we show that $\lim_{n\to\infty} a_n = 0$:
+
+$\forall \epsilon \in \R : \epsilon > 0$, $\exists N = \ceil{\frac{1}{3\epsilon} - \frac{2}{3}}$, $\forall n \in \N : n > N \implies \abs{\frac{(-1)^n}{2+3n} - 0} = \frac{1}{2+3n} < \epsilon$.
 
 
 
@@ -46,7 +48,9 @@ With a starting index of 0, we can write $a_n = \frac{(-1)^n}{2 + 3n}$. Then we 
 If $\frac{\cos(n)}{n}$ converges, prove its limit.
 
 \subsection*{Solution}
-$\forall \epsilon \in \R : \epsilon > 0$, $\exists N = \ceil{\frac{1}{\epsilon}}$, $\forall n \in \N : n > N \implies \abs{\frac{\cos(n)}{n}} \leq \abs{\frac{1}{n}} = \frac{1}{n} < \epsilon$
+We show that $\lim_{n\to\infty} \frac{\cos(n)}{n} = 0$:
+
+$\forall \epsilon \in \R : \epsilon > 0$, $\exists N = \ceil{\frac{1}{\epsilon}}$, $\forall n \in \N : n > N \implies \abs{\frac{\cos(n)}{n} - 0} \leq \abs{\frac{1}{n}} = \frac{1}{n} < \epsilon$.
 
 
 
@@ -57,7 +61,7 @@ $\forall \epsilon \in \R : \epsilon > 0$, $\exists N = \ceil{\frac{1}{\epsilon}}
 Investigate the convergence of $\floor{1 - \frac{1}{n}}$.
 
 \subsection*{Solution}
-
+The difference will always be less that 1 but greater than or equal to zero whenever $n \geq 1$, so every element of the sequence is just 0 and the sequence converges to 0.
 
 
 
