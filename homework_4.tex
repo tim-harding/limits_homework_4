@@ -200,11 +200,24 @@ In the limit, we have that $-0 \leq a_n \leq 0$, so from the squeeze theorem we 
 
 \subsection*{Problem}
 Show that
-\begin{align}
+\begin{align*}
     \lim_{n \to \infty} \frac{(-1)^n \ln(n)}{\sqrt{n}} = 0
-\end{align}
+\end{align*}
 
 \subsection*{Solution}
+We know that
+\begin{align*}
+    -\frac{\ln(n)}{\sqrt{n}} \leq \frac{(-1)^n \ln(n)}{\sqrt{n}} \leq \frac{\ln(n)}{\sqrt{n}}
+\end{align*}
+Using l'Hopital's rule, we evaluate
+\begin{align*}
+     & \lim_{n\to\infty} \frac{\ln(n)}{\sqrt{n}} \\
+    =& \lim_{n\to\infty} \frac{\frac{1}{n}}{\frac{1}{2\sqrt{n}}} \\
+    =& \lim_{n\to\infty} \frac{2\sqrt{n}}{n} \\
+    =& 2 \lim_{n\to\infty} n^{-\frac{1}{2}} \\
+    =& 0
+\end{align*}
+By using the linearity property of limits, we also have $\lim_{n\to\infty} -\frac{\ln(n)}{\sqrt{n}} = 0$. Combining the preceeding facts using the squeeze theorem, we have that $\lim_{n\to\infty} \frac{(-1)^n \ln(n)}{\sqrt{n}} = 0$.
 
 
 
