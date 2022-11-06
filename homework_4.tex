@@ -149,7 +149,7 @@ $\forall M \in \R : M > 0$, $\exists N = 2\ceil{M}$, $\forall n \in \N^+ : n > N
 Show that the sequence $a_n = \sqrt{n} - n$ diverges to negative infinity.
 
 \subsection*{Solution}
-$\forall M \in \R : M < 0$, $\exists N = \max\round{(1-M)^2, 2}$, $\forall n \in \N^+ : n > N \implies \sqrt{n} - n = \sqrt{n} \round{1 - \sqrt{n}} < 1 - \sqrt{n} < M$.
+$\forall M \in \R : M < 0$, $\exists N = \max\round{\ceil{(1-M)^2}, 2}$, $\forall n \in \N^+ : n > N \implies \sqrt{n} - n = \sqrt{n} \round{1 - \sqrt{n}} < 1 - \sqrt{n} < M$.
 
 
 
@@ -160,6 +160,7 @@ $\forall M \in \R : M < 0$, $\exists N = \max\round{(1-M)^2, 2}$, $\forall n \in
 Prove that $\lim_{n \to \infty} -\ln(n) = -\infty$.
 
 \subsection*{Solution}
+$\forall M \in \R : M < 0$, $\exists N = \ceil{e^{-M}}$, $\forall n \in \N^+ : n > N \implies -\ln(n) < M$.
 
 
 
