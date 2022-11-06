@@ -173,16 +173,26 @@ Prove that $\lim_{n \to \infty} (-1)^{n} n$ does not diverge to either $\infty$ 
 
 
 
-\section*{3.4.1}
+\section*{3.4.21}
 
 \subsection*{Problem}
 Prove the following:
 \begin{enumerate}
-    \item $\round{\abs{a_n} \leq b_n} \wedge \round{\lim_{n \to \infty} b_n = 0} \implies \lim_{n \to \infty} a_n = 0$.
-    \item $\lim_{n \to \infty} \abs{a_n} = 0 \implies \lim_{n \to \infty} a_n = 0$
+    \item \begin{align*}
+        \round{\abs{a_n} \leq b_n} \wedge \round{\lim_{n \to \infty} b_n = 0} \implies \lim_{n \to \infty} a_n = 0
+    \end{align*}
+    \item \begin{align*}
+        \lim_{n \to \infty} \abs{a_n} = 0 \implies \lim_{n \to \infty} a_n = 0
+    \end{align*}
 \end{enumerate}
 
 \subsection*{Solution}
+
+\subsubsection*{1}
+We have that $-b_n \leq a_n \leq b_n$ and $b_n \to 0$, so from the squeeze theorem we have that $a_n \to 0$.
+
+\subsubsection*{2}
+In the limit, we have that $-0 \leq a_n \leq 0$, so from the squeeze theorem we have that $a_n \to 0$.
 
 
 
