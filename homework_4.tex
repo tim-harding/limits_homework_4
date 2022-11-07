@@ -229,7 +229,7 @@ Find the limit or divergence behavior of each of the following:
     \item $\frac{n - 2}{2n + 7}$
     \item $\frac{(-1)^n (n - 2)}{2n + 7}$
     \item $\frac{n - 2}{2n^2}$
-    \item $\frac{n^2}{e^{n}}$
+    \item $\frac{n^2}{e^n}$
     \item $n^2 \round{\frac{1}{2}}^n$
     \item $\sin(\pi n + \frac{\pi}{2})$
     \item $n^\frac{1}{n}$
@@ -239,6 +239,94 @@ Find the limit or divergence behavior of each of the following:
 \end{enumerate}
 
 \subsection*{Solution}
+
+\subsubsection*{1}
+\begin{align*}
+     & \lim_{n\to\infty} \frac{n - 2}{2n + 7} \\
+    =& \lim_{n\to\infty} \frac{1}{2} \\
+    =& \frac{1}{2}
+\end{align*}
+
+\subsubsection*{2}
+In the limit, this function oscillates between $-\frac{1}{2}$ and $\frac{1}{2}$ and does not converge.
+
+\subsubsection*{3}
+\begin{align*}
+     & \lim_{n\to\infty} \frac{n-2}{2n^2} \\
+    =& \lim_{n\to\infty} \frac{1}{4n} \\
+    =& 0
+\end{align*}
+
+\subsubsection*{4}
+\begin{align*}
+     & \lim_{n\to\infty} \frac{n^2}{e^n} \\
+    =& \lim_{n\to\infty} \frac{2n}{e^n} \\
+    =& \lim_{n\to\infty} \frac{2}{e^n} \\
+    =& 0
+\end{align*}
+
+\subsubsection*{5}
+\begin{align*}
+     & \lim_{n\to\infty} n^2 \round{\frac{1}{2}}^n \\
+    =& \lim_{n\to\infty} \frac{n^2}{2^n} \\
+    =& \lim_{n\to\infty} \frac{2n}{2^n \ln(2)} \\
+    =& \frac{2}{\ln(2)} \lim_{n\to\infty} \frac{n}{2^n} \\
+    =& \frac{2}{\ln(2)} \lim_{n\to\infty} \frac{1}{2^n \ln(2)} \\
+    =& \frac{2}{\ln^2(2)} \lim_{n\to\infty} 2^{-n} \\
+    =& 0
+\end{align*}
+
+\subsubsection*{6}
+We have
+\begin{align*}
+    \sin\round{\pi n + \frac{\pi}{2}} = (-1)^n
+\end{align*}
+Which does not converge but rather oscillates between -1 and 1.
+
+\subsubsection*{7}
+\begin{align*}
+     & \lim_{n\to\infty} n^\frac{1}{n} \\
+    =& \lim_{n\to\infty} \round{e^{\ln(n)}}^\frac{1}{n} \\
+    =& \lim_{n\to\infty} e^{\frac{1}{n} \ln(n)}
+\end{align*}
+We then evaluate
+\begin{align*}
+     & \lim_{n\to\infty} \frac{\ln(n)}{n} \\
+    =& \lim_{n\to\infty} \frac{\frac{1}{n}}{1} \\
+    =& 0
+\end{align*}
+and substitute back
+\begin{align*}
+     & \lim_{n\to\infty} e^{\frac{1}{n} \ln(n)} \\
+    =& e^0 \\
+    =& 1
+\end{align*}
+
+\subsubsection*{8}
+\begin{align*}
+     & \lim_{n\to\infty} \round{1 - \frac{2}{n}}^n \\
+    =& \lim_{n\to\infty} \round{\frac{n-2}{n}}^n \\
+    =& \round{\lim_{n\to\infty} \frac{n-2}{n}}^n \\
+    =& \round{\lim_{n\to\infty} \frac{1}{1}}^n \\
+    =& 1^n \\
+    =& 1
+\end{align*}
+
+\subsubsection*{9}
+TODO
+\begin{align*}
+     & \lim_{n\to\infty} \round{\sqrt{n^2 + 1} - n} \\
+\end{align*}
+
+\subsubsection*{10}
+\begin{align*}
+     & \lim_{n\to\infty} n \sin\round{\frac{1}{n}} \\
+    =& \lim_{n\to\infty} \frac{\sin\round{n^{-1}}}{n^{-1}} \\
+    =& \lim_{n\to\infty} \frac{\cos\round{n^{-1}} \times -n^{-2}}{-n^{-2}} \\
+    =& \lim_{n\to\infty} \cos\round{n^{-1}} \\
+    =& \cos(0) \\
+    =& 1
+\end{align*}
 
 
 
