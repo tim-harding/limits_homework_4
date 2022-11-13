@@ -441,6 +441,10 @@ Restate and then negate the following definition using quantifier:
 For a given sequence $a_n$, we define the sequence of partial sums $s_1$, $s_2$, $\cdots$, $s_n$ by $s_1 = a_1$, $s_n = s_{n - 1} + a_n$. We say that the series $\sum_{n = 1}^\infty a_n$ converges to $s$ and write $\sum_{n = 1}^\infty a_n = s$.
 
 \subsection*{Solution}
+\begin{align*}
+    \neg \round{\exists s : (s_1 = a_1) \wedge (\forall n \in \N : n \geq 2,\ s_n = s_{n-1} + a_n) \implies \sum_{n=1}^\infty a_n = s} \\
+    \nexists s : (s_1 = a_1) \wedge (\forall n \in \N : n \geq 2,\ s_n = s_{n-1} + a_n) \implies \sum_{n=1}^\infty a_n \ \text{DNE}
+\end{align*}
 
 
 
