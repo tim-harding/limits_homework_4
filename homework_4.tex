@@ -391,9 +391,11 @@ The function is monotonic decreasing for $n \geq \ceil{a}$ and is bounded by $0 
 \section*{3.4.29}
 
 \subsection*{Problem}
-Show that if $\forall n \in \R$, $a_n \leq b_n$, $\lim_{n \to \infty} a_n = L$, $\lim_{n \to \infty} b_n = M$, then $L \leq M$. Use this result to prove that the limit is unique for a convergent sequence.
+Show that $\forall n \in \N$, $a_n \leq b_n$, $\lim_{n \to \infty} a_n = L$, $\lim_{n \to \infty} b_n = M \implies L \leq M$. Use this result to prove that the limit is unique for a convergent sequence.
 
 \subsection*{Solution}
+TODO
+$\forall \epsilon \in \R : \epsilon > 0$, $\forall n \in \N \implies a_n - b_n \leq 0$, $\exists K_1, K_2 \in \N$, $\forall n \in \N : n > K_1 \implies L - a_n < \epsilon$, $\forall n \in \N : n > K_2 \implies M - b_n < \epsilon$, $\exists K = \max(K_1, K_2)$, $\forall n \in \N : n > K \implies L - M \leq L - M - (a_n - b_n) = (L - a_n) - (M - b_n)$
 
 
 
