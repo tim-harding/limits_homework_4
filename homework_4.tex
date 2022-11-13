@@ -486,6 +486,7 @@ Find the sum or show divergence of each of the following:
     \item $1 - \frac{1}{2} + \frac{1}{4} - \frac{1}{8} + \frac{1}{16} - \frac{1}{32} + \cdots$
     \item $\sum_{n = 1}^\infty \frac{4^{n + 1} + 5^n}{20^n}$
     \item $\sum_{k = 1}^\infty \frac{2}{4k^2 - 1}$
+    \item $\sum_{n=2}^\infty \ln\round{\frac{n-1}{n}}$
 \end{enumerate}
 
 \subsection*{Solution}
@@ -557,6 +558,14 @@ Find the sum or show divergence of each of the following:
     =& 1 - \frac{1}{3} + \frac{1}{3} - \frac{1}{5} + \frac{1}{5} - \frac{1}{7} + \frac{1}{7} - \cdots \\
     =& 1
 \end{align*}
+
+\subsubsection*{5}
+\begin{align*}
+     & \sum_{n=2}^\infty \ln\round{\frac{n-1}{n}} \\
+    =& \ln\round{\prod_{n=2}^\infty \frac{n-1}{n}} \\
+    =& \ln(0)
+\end{align*}
+Diverges.
 
 
 
