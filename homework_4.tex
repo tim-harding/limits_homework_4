@@ -509,6 +509,26 @@ Given the sequence
 
 \subsection*{Solution}
 
+\subsubsection*{1}
+The sequence goes
+\begin{align*}
+    1 &= 1             \\
+    1 &= 1             \\
+    1+1 &= 2           \\
+    1+1+2 &= 4         \\
+    1+1+2+4 &= 8       \\
+    1+1+2+4+8 &= 16    \\
+    1+1+2+4+8+16 &= 32
+\end{align*}
+The general formula is $x_n = 2^{\max(0,\ n-2)}$.
+
+\subsubsection*{2}
+\begin{align*}
+     & \lim_{n\to\infty} 2^{\max(0,\ n-2)} \\
+    =& \frac{1}{4} \lim_{n\to\infty} 2^n \\
+    =& \infty
+\end{align*}
+
 
 
 \section*{4.1.19}
