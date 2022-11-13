@@ -466,6 +466,24 @@ This problem has two parts:
 
 \subsection*{Solution}
 
+\subsubsection*{1}
+We have $\sum_{n=1}^\infty n = \infty$ and $\sum_{n=1}^\infty -n = -\infty$ but $\sum_{n=1}^\infty (n + (-n)) = 0$.
+
+\subsubsection*{2}
+We have $\sum_{n=1}^\infty (a_n + b_n) = c_1$ and $\sum_{n=1}^\infty (a_n - b_n) = c_2$. Then
+\begin{align*}
+    \sum_{n=1}^\infty (a_n + b_n) + \sum_{n=1}^\infty (a_n - b_n) &= c_1 + c_2 \\
+    \sum_{n=1}^\infty (a_n + b_n + a_n - b_n) &= c_1 + c_2 \\
+    \sum_{n=1}^\infty a_n &= \frac{c_1 + c_2}{2} \\
+\end{align*}
+So $\sum_{n=1}^\infty a_n$ converges. Likewise,
+\begin{align*}
+    \sum_{n=1}^\infty (a_n + b_n) - \sum_{n=1}^\infty (a_n - b_n) &= c_1 - c_2 \\
+    \sum_{n=1}^\infty (a_n + b_n - a_n + b_n) &= c_1 - c_2 \\
+    \sum_{n=1}^\infty b_n &= \frac{c_1 - c_2}{2} \\
+\end{align*}
+So $\sum_{n=1}^\infty b_n$ converges as well.
+
 
 
 \section*{4.1.14}
