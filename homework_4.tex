@@ -431,6 +431,8 @@ We let $f(x) = 2^x$ and $a_n = \frac{1}{n}$. Note that $\lim_{n\to\infty} \frac{
 Prove the general case of $\lim_{n \to \infty} \frac{k^n}{n!}$ for a fix real number $k$. (Note that when $\abs{k} \leq 1$, it is much easier, why?)
 
 \subsection*{Solution}
+TODO
+$\exists a = \ceil{k}$, $\forall n \in \N : n > 2a$, $\frac{k^n}{n!} < \frac{a^n}{n!} = a^{2a} \frac{a^{n-2a}}{n!} = a^{2a} \frac{1 \times 2 \times 3 \times \cdots}{2a \times (2a+1) \times (2a+2) \times \cdots} = a^{2a} \prod_{i=1}^n \frac{i}{2a + i} < \epsilon$.
 
 
 
@@ -440,6 +442,7 @@ Prove the general case of $\lim_{n \to \infty} \frac{k^n}{n!}$ for a fix real nu
 Prove by definition that if $a_n$ diverges to $\infty$, then if $b_n \geq a_n$, then $b_n$ also diverges to $\infty$. Similarly, if $a_n$ diverges to $-\infty$, then if $b_n \leq a_n$, then $b_n$ also diverges to $-\infty$.
 
 \subsection*{Solution}
+$\forall M \in \R : M > 0$, $\exists N \in \N$, $\forall n \in \N : n > N \implies a_n > M$, $\forall n \in \N \implies b_n > a_n$, $\forall n \in \N : n > N \implies b_n > a_n > M$. Likewise, $\forall M \in \R : M < 0$, $\exists N \in \N$, $\forall n \in \N : n < N \implies a_n < M$, $\forall n \in \N \implies b_n < a_n$, $\forall n \in \N : n < N \implies b_n < a_n < M$.
 
 
 
