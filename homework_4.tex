@@ -397,8 +397,9 @@ The function is monotonic decreasing for $n \geq \ceil{a}$ and is bounded by $0 
 Show that $\forall n \in \N$, $a_n \leq b_n$, $\lim_{n \to \infty} a_n = L$, $\lim_{n \to \infty} b_n = M \implies L \leq M$. Use this result to prove that the limit is unique for a convergent sequence.
 
 \subsection*{Solution}
-TODO
-$\forall \epsilon \in \R : \epsilon > 0$, $\forall n \in \N \implies a_n - b_n \leq 0$, $\exists K_1, K_2 \in \N$, $\forall n \in \N : n > K_1 \implies L - a_n < \epsilon$, $\forall n \in \N : n > K_2 \implies M - b_n < \epsilon$, $\exists K = \max(K_1, K_2)$, $\forall n \in \N : n > K \implies L - M \leq L - M - (a_n - b_n) = (L - a_n) - (M - b_n)$
+$\forall \epsilon \in \R : \epsilon > 0$, $\forall n \in \N \implies a_n - b_n \leq 0$, $\exists K_1, K_2 \in \N$, $\forall n \in \N : n > K_1 \implies L - a_n < \epsilon$, $\forall n \in \N : n > K_2 \implies M - b_n < \epsilon$, $\exists K = \max(K_1, K_2)$, $\forall n \in \N : n > K \implies L - M \leq L - M - (a_n - b_n) = (L - a_n) - (M - b_n)$.
+
+I'm having trouble finishing this prove with an epsilon argument but it makes sense that if every term of $a_n$ is less than that of $b_n$, $a_n$ certainly cannot exceed $b_n$ after infinitely many terms. $L$ may equal $M$ if, for example, $a_n = n^{-3}$ and $b_n = n^{-2}$, or $L$ can be less than $M$ for other sequences such as $a_n = n^{-2}$ and $b_n = 2 n^{-2}$.
 
 
 
