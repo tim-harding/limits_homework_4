@@ -693,6 +693,38 @@ Write as an infinite series and then find the fraction form for the number $11.1
 Prove that $\sum_{n=1}^\infty \frac{1}{n^2}$ is convergent by using partial sum and Squeeze Theorem. (Hint: the lower bound is zero while the upper bound is some telescoping series.)
 
 \subsection*{Solution}
+We see that $\frac{1}{n^2} < \frac{1}{n^2 - 1} = \frac{1}{(n+1)(n-1)} = \frac{a}{n+1} + \frac{b}{n-1}$. Solving for the constants, we have
+\begin{align*}
+    1 &= a(n-1) + b(n+1) \\
+    1 &= an - a + bn + b \\
+    1 &= (a+b)n + (-a + b)
+\end{align*}
+\begin{align*}
+    \begin{bmatrix}
+        1 & 1 & 0 \\
+        -1 & 1 & 1
+    \end{bmatrix}\\
+    \begin{bmatrix}
+        1 & 1 & 0 \\
+        0 & 2 & 1
+    \end{bmatrix} \\
+    \begin{bmatrix}
+        1 & 1 & 0 \\
+        0 & 1 & \frac{1}{2}
+    \end{bmatrix} \\
+    \begin{bmatrix}
+        1 & 0 & -\frac{1}{2} \\
+        0 & 1 & \frac{1}{2}
+    \end{bmatrix} \\
+\end{align*}
+So $a = -\frac{1}{2}$ and $b = \frac{1}{2}$. Consider $n \geq 2$:
+\begin{align*}
+     & \frac{-\frac{1}{2}}{n+1} + \frac{\frac{1}{2}}{n-1} \\
+    =& \frac{1}{2(n-1)} - \frac{1}{2(n+1)} \\
+    =& \frac{1}{2} - \frac{1}{6} + \frac{1}{4} - \frac{1}{8} + \frac{1}{6} - \frac{1}{10} + \cdots + \frac{1}{2(n-1)} - \frac{1}{2(n+1)} \\
+    =& \frac{1}{2} + \frac{1}{4} - \frac{1}{2(n-1)} - \frac{1}{2(n+1)}
+\end{align*}
+Which goes to $\frac{3}{4}$ in the limit. Since $\forall n \in \N^+, \frac{1}{n^2} > 0$, $a_1 = 1$, and $\frac{1}{n^2}$ is less than the convergent telescoping series $\frac{1}{n^2 - 1}$ for $n \geq 2$, we see that the series $\sum_{n=1}^\infty \frac{1}{n^2}$ converges.
 
 
 
