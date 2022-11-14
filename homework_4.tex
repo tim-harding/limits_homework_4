@@ -431,11 +431,10 @@ We let $f(x) = 2^x$ and $a_n = \frac{1}{n}$. Note that $\lim_{n\to\infty} \frac{
 \section*{3.4.A}
 
 \subsection*{Problem}
-Prove the general case of $\lim_{n \to \infty} \frac{k^n}{n!}$ for a fix real number $k$. (Note that when $\abs{k} \leq 1$, it is much easier, why?)
+Prove the general case of $\lim_{n \to \infty} \frac{k^n}{n!}$ for a fix real number $k$.
 
 \subsection*{Solution}
-TODO
-$\exists a = \ceil{k}$, $\forall n \in \N : n > 2a$, $\frac{k^n}{n!} < \frac{a^n}{n!} = a^{2a} \frac{a^{n-2a}}{n!} = a^{2a} \frac{1 \times 2 \times 3 \times \cdots}{2a \times (2a+1) \times (2a+2) \times \cdots} = a^{2a} \prod_{i=1}^n \frac{i}{2a + i} < \epsilon$.
+Without loss of generality, assume $k$ to be positive and let $a = \ceil{k}$ and $n \in \N : n > 2a$. Then $\frac{k^n}{n!} < \frac{a^n}{n!} = \frac{a^{2a}}{(2a)!} \times \frac{a^{n-2a}}{\frac{n!}{(2a)!}} = \frac{a^{2a}}{(2a)!} \times \underbrace{\round{\frac{a}{2a} \times \frac{a}{2a+1} \times \frac{a}{2a+2} \times \cdots}}_{n-2a \text{ terms less than } \frac{1}{2}} < \frac{a^{2a}}{(2a)!} \round{\frac{1}{2}}^{n-2a}$. Since $\frac{k^n}{n!} \geq 0$ and less than a geometric sequence with $r < 1$ it goes to 0 in the limit by the squeeze theorem. When $k < 0$, we instead approach 0 from the negative direction.
 
 
 
